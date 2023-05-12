@@ -1,11 +1,11 @@
 import { Divider } from './Divider';
 
 export default {
-  title: 'Atoms/Divider',
+  title: 'Components/Divider',
   component: Divider,
-  tags: ['autodocs'],
+  args: Divider.defaultProps,
 };
 
-export const Primary = {
+export const Default = {
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import DividerTwig from '@yalesites-org/component-library-twig/components/01-atoms/divider/yds-divider.twig';
-import '@yalesites-org/component-library-twig/components/01-atoms/divider/_yds-divider.scss';
+import DividerTwig from '@atoms/divider/yds-divider.twig';
+import '@atoms/divider/_yds-divider.scss';
 
 export const Divider = ({ thickness, color, width, position }) => {
   return (

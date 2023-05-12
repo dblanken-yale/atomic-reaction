@@ -4,11 +4,11 @@ const twigBEM = require('bem-twig-extension');
 const twigAddAttributes = require('add-attributes-twig-extension');
 
 module.exports.namespaces = {
-  atoms: resolve(__dirname, '../', 'components/01-atoms'),
-  molecules: resolve(__dirname, '../', 'components/02-molecules'),
-  organisms: resolve(__dirname, '../', 'components/03-organisms'),
-  'page-layouts': resolve(__dirname, '../', 'components/04-page-layouts'),
-  'page-examples': resolve(__dirname, '../', 'components/05-page-examples'),
+  atoms: resolve(__dirname, '../', 'node_modules/@yalesites-org/component-library-twig/components/01-atoms'),
+  molecules: resolve(__dirname, '../', 'node_modules/@yalesites-org/component-library-twig/components/02-molecules'),
+  organisms: resolve(__dirname, '../', 'node_modules/@yalesites-org/component-library-twig/components/03-organisms'),
+  'page-layouts': resolve(__dirname, '../', 'node_modules/@yalesites-org/component-library-twig/components/04-page-layouts'),
+  'page-examples': resolve(__dirname, '../', 'node_modules/@yalesites-org/component-library-twig/components/05-page-examples'),
 };
 
 /**
