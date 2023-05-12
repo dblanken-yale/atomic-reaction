@@ -1,6 +1,5 @@
 const globImporter = require('node-sass-glob-importer');
-import path from 'path';
-const stylesHandler = "style-loader";
+const { namespaces } = require('./setupTwig');
 
 module.exports = async ({ config }) => {
   // Twig
@@ -9,6 +8,11 @@ module.exports = async ({ config }) => {
     use: [
       {
         loader: 'twig-loader',
+        options: {
+          twigOptions: {
+            namespaces,
+          },
+        },
       },
     ],
   });
@@ -42,8 +46,6 @@ module.exports = async ({ config }) => {
     loader: 'js-yaml-loader',
   });
 
-  // Component alias
-  config.resolve.alias.Components = path.resolve(__dirname, "..", "node_modules/@yalesites-org/component-library-twig/components/");
-
   return config;
 };
+
