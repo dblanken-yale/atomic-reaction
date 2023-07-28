@@ -60,6 +60,8 @@ module.exports = async ({ config }) => {
   // Set resolve fallback for fs to false
   config.resolve.fallback = {
     fs: false,
+    stream: require.resolve("stream-browserify"),
+    constants: require.resolve("constants-browserify")
   };
 
   return config;
